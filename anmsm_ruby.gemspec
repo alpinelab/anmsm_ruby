@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'anmsm_ruby/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "anmsm-ruby"
+  spec.name          = "anmsm_ruby"
   spec.version       = AnmsmRuby::VERSION
   spec.authors       = ["Thibault Dalban", "Michael Baudino", "Lucas Biguet-Mermet"]
   spec.email         = ["thibault@alpine-lab.com", "michael@alpine-lab.com", "lucas@alpine-lab.com"]
