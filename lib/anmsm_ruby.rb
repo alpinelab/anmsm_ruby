@@ -1,4 +1,4 @@
-require "anmsm/ruby/version"
+require "anmsm_ruby/version"
 
 module AnmsmRuby
   class Base
