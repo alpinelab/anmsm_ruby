@@ -1,4 +1,4 @@
-# Anmsm::Ruby
+# Anmsm::Ruby [![Build Status](https://travis-ci.org/alpinelab/anmsm_ruby.png)](https://travis-ci.org/alpinelab/anmsm_ruby)
 
 The anmsm-ruby Gem gives you access to ANMSM API.
 
