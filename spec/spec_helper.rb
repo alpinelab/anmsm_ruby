@@ -1,3 +1,5 @@
+require 'coveralls'
+Coveralls.wear!
 require './lib/anmsm_ruby'
 
 RSpec.configure do |config|
