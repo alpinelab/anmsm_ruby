@@ -32,11 +32,11 @@ module AnmsmRuby
     end
 
     #returns weather info for the given resort
-    def weather_for_resort(resort, date = Time.now)
+    def weather_for_resort(resort)
       resort_id = resort.SyndicObjectID
-      @weather_svc.Objects.filter("STATION eq '#{resort_id}'").filter("day(Updated)  eq #{date.day}")
-                                                              .filter("month(Updated) eq #{date.month}")
-                                                              .filter("year(Updated)  eq #{date.year}")
+      @weather_svc.Objects.filter("STATION eq '#{resort_id}'").order_by("day(Updated)")
+                                                              .order_by("month(Updated)")
+                                                              .order_by("year(Updated)")
       @weather_svc.execute
     end
   end
