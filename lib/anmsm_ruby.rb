@@ -26,8 +26,9 @@ module AnmsmRuby
     end
 
     #returns snow info for the given resort
-    def snow_info_for_resort(resort_anmsm_id)
-      @snow_svc.Objects.filter("STATION eq '#{resort_anmsm_id}'").order_by("Updated")
+    def snow_info_for_resort(resort)
+      resort_id = resort.SyndicObjectID
+      @snow_svc.Objects.filter("STATION eq '#{resort_id}'").order_by("Updated")
       @snow_svc.execute
     end
 

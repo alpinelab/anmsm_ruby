@@ -1,0 +1,913 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://wcf.tourinsoft.com/Syndication/anmsm/817bee9d-faf4-4680-9d05-e41c2c90ae5a/$metadata
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '20801'
+      Date:
+      - Tue, 03 Sep 2013 10:29:25 GMT
+      Content-Type:
+      - application/xml;charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - ASP.NET_SessionId=qleirnkm40r5golw2dkpuxsg; path=/; HttpOnly
+      Dataserviceversion:
+      - 1.0;
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - ! '*'
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<edmx:Edmx
+        Version=\"1.0\" xmlns:edmx=\"http://schemas.microsoft.com/ado/2007/06/edmx\">\r\n
+        \ <edmx:DataServices xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        m:DataServiceVersion=\"1.0\">\r\n    <Schema Namespace=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7\"
+        xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\" xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://schemas.microsoft.com/ado/2008/09/edm\">\r\n      <EntityType
+        Name=\"SyndicObject\">\r\n        <Key>\r\n          <PropertyRef Name=\"SyndicObjectID\"
+        />\r\n        </Key>\r\n        <Property Name=\"SyndicObjectID\" Type=\"Edm.String\"
+        Nullable=\"false\" MaxLength=\"128\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"Published\" Type=\"Edm.DateTime\" Nullable=\"false\"
+        m:FC_TargetPath=\"SyndicationPublished\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"Updated\" Type=\"Edm.DateTime\" Nullable=\"false\"
+        m:FC_TargetPath=\"SyndicationUpdated\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"SyndicObjectName\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"SyndicationTitle\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"SyndicStructureId\" Type=\"Edm.Guid\" Nullable=\"true\" />\r\n        <Property
+        Name=\"GmapLatitude\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"lat\" m:FC_NsUri=\"http://www.georss.org/georss\"
+        m:FC_NsPrefix=\"geo\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"GmapLongitude\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"long\" m:FC_NsUri=\"http://www.georss.org/georss\"
+        m:FC_NsPrefix=\"geo\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"ObjectTypeFix\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ObjectTypeName\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SyndicObjectOrder\" Type=\"Edm.Int64\" Nullable=\"false\"
+        />\r\n        <Property Name=\"DESCRESGB\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"LABELFPM\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DESCCOMHIVERFR\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"ALTBAS\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"DESCRESHIVERGB\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"EMAILRESA\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCHEBHIVERFR\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"PLANPISTES\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"LOGO\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"NOMSTATION\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"PLANDOMAINERANDO\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DESCACTGB\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"FERMPART\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"DESCHIVERFR\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DESCHEBFR\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"TELRESA\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"WEBCAMLAC\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DESCCOMFR\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"ACCROCHE\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"ADRESSEOT\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DESCFPMHIVERFR\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCHEBGB\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"DESCACTHIVERFR\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"WEBCAM\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"WEBOT\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"DESCFPMETEGB\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"OUVPART\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCETEFR\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"FAXOT\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"DESCACTHIVERGB\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCACCHGB\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"DESCRESHIVERFR\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"WEBRESA\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"OUVSTATION\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"DESCCOMGB\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"CRITEINT\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCHEBHIVERGB\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"DESCACTFR\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"VTT\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCETEGB\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"LATITUDE\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DESCACCHFR\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"MASSIF\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"URLFPM\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"COMMOUVPART\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"CPOT\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"LONGITUDE\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"NOMOT\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"CRITHINT\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"DESCRESFR\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"CRITEEXT\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"TELOT\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NAVETTEFICHIER\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"STYLESHIVER\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"ALTHAUT\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"DESCFPMETEFR\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DESCFPMHIVERGB\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"CRITHEXT\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"PHOTOS\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"PLANDOMAINEVTT\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCACCEGB\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"CRITHMON\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DESCACCEFR\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCCOMHIVERGB\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"ACCES\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"STYLESETE\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCHIVERGB\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"PHOTOS_DIAPO\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <NavigationProperty Name=\"Searchs\"
+        Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicSearch_Object\"
+        FromRole=\"SyndicSearch_Object_Target\" ToRole=\"SyndicSearch_Object_Source\"
+        />\r\n        <NavigationProperty Name=\"Structure\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicObject_Structure\"
+        FromRole=\"SyndicObject_Structure_Source\" ToRole=\"SyndicObject_Structure_Target\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicSearch\">\r\n
+        \       <Key>\r\n          <PropertyRef Name=\"SyndicSearchID\" />\r\n        </Key>\r\n
+        \       <Property Name=\"SyndicSearchID\" Type=\"Edm.Int64\" Nullable=\"false\"
+        p8:StoreGeneratedPattern=\"Identity\" xmlns:p8=\"http://schemas.microsoft.com/ado/2009/02/edm/annotation\"
+        />\r\n        <Property Name=\"SyndicObjectID\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"128\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"ObjectTypeFix\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"LABELFPM\"
+        Type=\"Edm.Boolean\" Nullable=\"true\" />\r\n        <Property Name=\"NOMSTATION\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"MASSIF\" Type=\"Edm.Guid\" Nullable=\"true\"
+        />\r\n        <Property Name=\"STYLESHIVER\" Type=\"Edm.Guid\" Nullable=\"true\"
+        />\r\n        <Property Name=\"STYLESETE\" Type=\"Edm.Guid\" Nullable=\"true\"
+        />\r\n        <NavigationProperty Name=\"Object\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicSearch_Object\"
+        FromRole=\"SyndicSearch_Object_Source\" ToRole=\"SyndicSearch_Object_Target\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicStructure\">\r\n
+        \       <Key>\r\n          <PropertyRef Name=\"SyndicStructureId\" />\r\n
+        \       </Key>\r\n        <Property Name=\"SyndicStructureId\" Type=\"Edm.Guid\"
+        Nullable=\"false\" />\r\n        <Property Name=\"Name\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"Email\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"EmailName\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"Url\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"Address1\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"Address2\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"Address3\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"Postcode\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"City\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"Country\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicItem\">\r\n        <Key>\r\n
+        \         <PropertyRef Name=\"SyndicItemID\" />\r\n        </Key>\r\n        <Property
+        Name=\"SyndicItemID\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"128\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ItemValue\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"ItemOrder\" Type=\"Edm.Int64\" Nullable=\"false\"
+        />\r\n        <Property Name=\"SyndicId\" Type=\"Edm.Guid\" Nullable=\"false\"
+        />\r\n        <Property Name=\"SyndicFieldID\" Type=\"Edm.Guid\" Nullable=\"false\"
+        />\r\n        <NavigationProperty Name=\"Field\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicField_Items\"
+        FromRole=\"SyndicField_Items_Target\" ToRole=\"SyndicField_Items_Source\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicField\">\r\n        <Key>\r\n
+        \         <PropertyRef Name=\"SyndicFieldID\" />\r\n        </Key>\r\n        <Property
+        Name=\"SyndicFieldID\" Type=\"Edm.Guid\" Nullable=\"false\" />\r\n        <Property
+        Name=\"SyndicFieldName\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"SyndicationTitle\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"ViewType\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <Property
+        Name=\"TypeField\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <Property
+        Name=\"SyndicId\" Type=\"Edm.Guid\" Nullable=\"false\" />\r\n        <Property
+        Name=\"ReferenceOrdre\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <NavigationProperty
+        Name=\"Items\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicField_Items\"
+        FromRole=\"SyndicField_Items_Source\" ToRole=\"SyndicField_Items_Target\"
+        />\r\n      </EntityType>\r\n      <Association Name=\"SyndicSearch_Object\">\r\n
+        \       <End Role=\"SyndicSearch_Object_Source\" Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicSearch\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"SyndicSearch_Object_Target\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicObject\"
+        Multiplicity=\"0..1\" />\r\n        <ReferentialConstraint>\r\n          <Principal
+        Role=\"SyndicSearch_Object_Target\">\r\n            <PropertyRef Name=\"SyndicObjectID\"
+        />\r\n          </Principal>\r\n          <Dependent Role=\"SyndicSearch_Object_Source\">\r\n
+        \           <PropertyRef Name=\"SyndicObjectID\" />\r\n          </Dependent>\r\n
+        \       </ReferentialConstraint>\r\n      </Association>\r\n      <Association
+        Name=\"SyndicObject_Structure\">\r\n        <End Role=\"SyndicObject_Structure_Source\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicObject\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"SyndicObject_Structure_Target\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicStructure\"
+        Multiplicity=\"0..1\" />\r\n        <ReferentialConstraint>\r\n          <Principal
+        Role=\"SyndicObject_Structure_Target\">\r\n            <PropertyRef Name=\"SyndicStructureId\"
+        />\r\n          </Principal>\r\n          <Dependent Role=\"SyndicObject_Structure_Source\">\r\n
+        \           <PropertyRef Name=\"SyndicStructureId\" />\r\n          </Dependent>\r\n
+        \       </ReferentialConstraint>\r\n      </Association>\r\n      <Association
+        Name=\"SyndicField_Items\">\r\n        <End Role=\"SyndicField_Items_Source\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicField\"
+        Multiplicity=\"1\">\r\n          <OnDelete Action=\"Cascade\" />\r\n        </End>\r\n
+        \       <End Role=\"SyndicField_Items_Target\" Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicItem\"
+        Multiplicity=\"*\" />\r\n        <ReferentialConstraint>\r\n          <Principal
+        Role=\"SyndicField_Items_Source\">\r\n            <PropertyRef Name=\"SyndicFieldID\"
+        />\r\n          </Principal>\r\n          <Dependent Role=\"SyndicField_Items_Target\">\r\n
+        \           <PropertyRef Name=\"SyndicFieldID\" />\r\n          </Dependent>\r\n
+        \       </ReferentialConstraint>\r\n      </Association>\r\n    </Schema>\r\n
+        \   <Schema Namespace=\"System.Data.Objects\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
+        xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://schemas.microsoft.com/ado/2008/09/edm\">\r\n      <EntityContainer
+        Name=\"SyndicationContext\" m:IsDefaultEntityContainer=\"true\">\r\n        <FunctionImport
+        Name=\"WelcomePage\" ReturnType=\"Edm.String\" m:HttpMethod=\"GET\" m:MimeType=\"text/html\"
+        />\r\n        <EntitySet Name=\"Objects\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicObject\"
+        />\r\n        <EntitySet Name=\"Searchs\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicSearch\"
+        />\r\n        <EntitySet Name=\"Structures\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicStructure\"
+        />\r\n        <EntitySet Name=\"Items\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicItem\"
+        />\r\n        <EntitySet Name=\"Fields\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicField\"
+        />\r\n        <AssociationSet Name=\"SyndicSearch_Object\" Association=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicSearch_Object\">\r\n
+        \         <End Role=\"SyndicSearch_Object_Source\" EntitySet=\"Searchs\" />\r\n
+        \         <End Role=\"SyndicSearch_Object_Target\" EntitySet=\"Objects\" />\r\n
+        \       </AssociationSet>\r\n        <AssociationSet Name=\"SyndicObject_Structure\"
+        Association=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicObject_Structure\">\r\n
+        \         <End Role=\"SyndicObject_Structure_Source\" EntitySet=\"Objects\"
+        />\r\n          <End Role=\"SyndicObject_Structure_Target\" EntitySet=\"Structures\"
+        />\r\n        </AssociationSet>\r\n        <AssociationSet Name=\"SyndicField_Items\"
+        Association=\"TourInSoft.V5.Syndication.Syndication_DiffusionDonneesStationsHiver_0F2786229CE5455BA4EE92DFE8BAEFA7.SyndicField_Items\">\r\n
+        \         <End Role=\"SyndicField_Items_Source\" EntitySet=\"Fields\" />\r\n
+        \         <End Role=\"SyndicField_Items_Target\" EntitySet=\"Items\" />\r\n
+        \       </AssociationSet>\r\n      </EntityContainer>\r\n    </Schema>\r\n
+        \ </edmx:DataServices>\r\n</edmx:Edmx>"
+    http_version: 
+  recorded_at: Tue, 03 Sep 2013 10:31:19 GMT
+- request:
+    method: get
+    uri: http://wcf.tourinsoft.com/Syndication/anmsm/fc13de9f-fa6c-45bf-9f25-1f023a3e6db5/$metadata
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '24448'
+      Date:
+      - Tue, 03 Sep 2013 10:29:25 GMT
+      Content-Type:
+      - application/xml;charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - ASP.NET_SessionId=zeybmey2shvm1pf2ifx5lmyu; path=/; HttpOnly
+      Dataserviceversion:
+      - 1.0;
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - ! '*'
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<edmx:Edmx
+        Version=\"1.0\" xmlns:edmx=\"http://schemas.microsoft.com/ado/2007/06/edmx\">\r\n
+        \ <edmx:DataServices xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        m:DataServiceVersion=\"1.0\">\r\n    <Schema Namespace=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953\"
+        xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\" xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://schemas.microsoft.com/ado/2008/09/edm\">\r\n      <EntityType
+        Name=\"SyndicObject\">\r\n        <Key>\r\n          <PropertyRef Name=\"SyndicObjectID\"
+        />\r\n        </Key>\r\n        <Property Name=\"SyndicObjectID\" Type=\"Edm.String\"
+        Nullable=\"false\" MaxLength=\"128\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"Published\" Type=\"Edm.DateTime\" Nullable=\"false\"
+        m:FC_TargetPath=\"SyndicationPublished\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"Updated\" Type=\"Edm.DateTime\" Nullable=\"false\"
+        m:FC_TargetPath=\"SyndicationUpdated\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"SyndicObjectName\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"SyndicationTitle\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"SyndicStructureId\" Type=\"Edm.Guid\" Nullable=\"true\" />\r\n        <Property
+        Name=\"GmapLatitude\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"lat\" m:FC_NsUri=\"http://www.georss.org/georss\"
+        m:FC_NsPrefix=\"geo\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"GmapLongitude\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"long\" m:FC_NsUri=\"http://www.georss.org/georss\"
+        m:FC_NsPrefix=\"geo\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"ObjectTypeFix\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ObjectTypeName\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SyndicObjectOrder\" Type=\"Edm.Int64\" Nullable=\"false\"
+        />\r\n        <Property Name=\"OUVROUGES\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR6TYPE\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"TEMPBASHIVER\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"COMMGEN\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"ETATITIPIE\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR11ACTIVITES\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR7ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"STATION\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"TEMPBAIGN\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"JOUVRM\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEURNORDICACTIVITES\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ETATITIRAQ\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"CIELJ1HIVER\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR10DETAIL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR9DETAIL\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"KMNORDOUV\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR5TYPE\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR7GENERAL\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR11TYPE\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR3DETAIL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"HNEIGEHAUTHIVER\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"KMSKAOUV\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR6GENERAL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR7DETAIL\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"OUVNOIRES\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"KMRAQOUV\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR7TYPE\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SKIA\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"KMALPOUV\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR1GENERAL\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR2ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"RETOURSKI\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR2TYPE\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR9TYPE\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR4TYPE\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"LIAI\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR5ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR1ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"COMMGENGB\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"OUVVERTES\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR5DETAIL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR8TYPE\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"KMPIEOUV\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR4GENERAL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"HCHUTECM\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR12GENERAL\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"DIRVENTBASHIVER\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"QUALNEIGEHIVER\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEURNORDICDETAIL\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR12ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR4DETAIL\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"NBOUVRM\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR8DETAIL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"CIELHIVER\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"TEMPHAUTHIVER\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"OBSGBHIVER\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ETATCHAUSSEE\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"HFERMRM\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR8ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR10GENERAL\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR1DETAIL\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR3ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ETATROU\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR6ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"VITVENTBASHIVER\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR11GENERAL\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR4ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR5GENERAL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR1TYPE\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DATECHUTE\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"OBSFRHIVER\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DIRVENTHAUTHIVER\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR3GENERAL\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NBOUVSNOW\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR11DETAIL\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEURNORDICTYPE\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"RISQAVALHIVER\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"HOUVRM\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR9ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR12TYPE\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"OUVBLEUES\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"VITVENTHAUTHIVER\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR10TYPE\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR6DETAIL\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"HCHUTE\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR2GENERAL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SECTEUR8GENERAL\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"TEMPAPMHIVER\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"HNEIGEBASHIVER\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"SKINUIT\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEURNORDICGENERAL\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR3TYPE\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"HEURECHUTE\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"OUVSNOW\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SECTEUR10ACTIVITES\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"SECTEUR2DETAIL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <NavigationProperty Name=\"Searchs\"
+        Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicSearch_Object\"
+        FromRole=\"SyndicSearch_Object_Target\" ToRole=\"SyndicSearch_Object_Source\"
+        />\r\n        <NavigationProperty Name=\"Structure\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicObject_Structure\"
+        FromRole=\"SyndicObject_Structure_Source\" ToRole=\"SyndicObject_Structure_Target\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicSearch\">\r\n
+        \       <Key>\r\n          <PropertyRef Name=\"SyndicSearchID\" />\r\n        </Key>\r\n
+        \       <Property Name=\"SyndicSearchID\" Type=\"Edm.Int64\" Nullable=\"false\"
+        p8:StoreGeneratedPattern=\"Identity\" xmlns:p8=\"http://schemas.microsoft.com/ado/2009/02/edm/annotation\"
+        />\r\n        <Property Name=\"SyndicObjectID\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"128\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"ObjectTypeFix\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"OUVROUGES\"
+        Type=\"Edm.Double\" Nullable=\"true\" />\r\n        <Property Name=\"STATION\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"OUVNOIRES\" Type=\"Edm.Double\" Nullable=\"true\"
+        />\r\n        <Property Name=\"OUVVERTES\" Type=\"Edm.Double\" Nullable=\"true\"
+        />\r\n        <Property Name=\"OUVBLEUES\" Type=\"Edm.Double\" Nullable=\"true\"
+        />\r\n        <NavigationProperty Name=\"Object\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicSearch_Object\"
+        FromRole=\"SyndicSearch_Object_Source\" ToRole=\"SyndicSearch_Object_Target\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicStructure\">\r\n
+        \       <Key>\r\n          <PropertyRef Name=\"SyndicStructureId\" />\r\n
+        \       </Key>\r\n        <Property Name=\"SyndicStructureId\" Type=\"Edm.Guid\"
+        Nullable=\"false\" />\r\n        <Property Name=\"Name\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"Email\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"EmailName\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"Url\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"Address1\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"Address2\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"Address3\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"Postcode\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"City\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"Country\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicItem\">\r\n        <Key>\r\n
+        \         <PropertyRef Name=\"SyndicItemID\" />\r\n        </Key>\r\n        <Property
+        Name=\"SyndicItemID\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"128\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ItemValue\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"ItemOrder\" Type=\"Edm.Int64\" Nullable=\"false\"
+        />\r\n        <Property Name=\"SyndicId\" Type=\"Edm.Guid\" Nullable=\"false\"
+        />\r\n        <Property Name=\"SyndicFieldID\" Type=\"Edm.Guid\" Nullable=\"false\"
+        />\r\n        <NavigationProperty Name=\"Field\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicField_Items\"
+        FromRole=\"SyndicField_Items_Target\" ToRole=\"SyndicField_Items_Source\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicField\">\r\n        <Key>\r\n
+        \         <PropertyRef Name=\"SyndicFieldID\" />\r\n        </Key>\r\n        <Property
+        Name=\"SyndicFieldID\" Type=\"Edm.Guid\" Nullable=\"false\" />\r\n        <Property
+        Name=\"SyndicFieldName\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"SyndicationTitle\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"ViewType\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <Property
+        Name=\"TypeField\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <Property
+        Name=\"SyndicId\" Type=\"Edm.Guid\" Nullable=\"false\" />\r\n        <Property
+        Name=\"ReferenceOrdre\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <NavigationProperty
+        Name=\"Items\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicField_Items\"
+        FromRole=\"SyndicField_Items_Source\" ToRole=\"SyndicField_Items_Target\"
+        />\r\n      </EntityType>\r\n      <Association Name=\"SyndicSearch_Object\">\r\n
+        \       <End Role=\"SyndicSearch_Object_Source\" Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicSearch\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"SyndicSearch_Object_Target\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicObject\"
+        Multiplicity=\"0..1\" />\r\n        <ReferentialConstraint>\r\n          <Principal
+        Role=\"SyndicSearch_Object_Target\">\r\n            <PropertyRef Name=\"SyndicObjectID\"
+        />\r\n          </Principal>\r\n          <Dependent Role=\"SyndicSearch_Object_Source\">\r\n
+        \           <PropertyRef Name=\"SyndicObjectID\" />\r\n          </Dependent>\r\n
+        \       </ReferentialConstraint>\r\n      </Association>\r\n      <Association
+        Name=\"SyndicObject_Structure\">\r\n        <End Role=\"SyndicObject_Structure_Source\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicObject\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"SyndicObject_Structure_Target\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicStructure\"
+        Multiplicity=\"0..1\" />\r\n        <ReferentialConstraint>\r\n          <Principal
+        Role=\"SyndicObject_Structure_Target\">\r\n            <PropertyRef Name=\"SyndicStructureId\"
+        />\r\n          </Principal>\r\n          <Dependent Role=\"SyndicObject_Structure_Source\">\r\n
+        \           <PropertyRef Name=\"SyndicStructureId\" />\r\n          </Dependent>\r\n
+        \       </ReferentialConstraint>\r\n      </Association>\r\n      <Association
+        Name=\"SyndicField_Items\">\r\n        <End Role=\"SyndicField_Items_Source\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicField\"
+        Multiplicity=\"1\">\r\n          <OnDelete Action=\"Cascade\" />\r\n        </End>\r\n
+        \       <End Role=\"SyndicField_Items_Target\" Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicItem\"
+        Multiplicity=\"*\" />\r\n        <ReferentialConstraint>\r\n          <Principal
+        Role=\"SyndicField_Items_Source\">\r\n            <PropertyRef Name=\"SyndicFieldID\"
+        />\r\n          </Principal>\r\n          <Dependent Role=\"SyndicField_Items_Target\">\r\n
+        \           <PropertyRef Name=\"SyndicFieldID\" />\r\n          </Dependent>\r\n
+        \       </ReferentialConstraint>\r\n      </Association>\r\n    </Schema>\r\n
+        \   <Schema Namespace=\"System.Data.Objects\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
+        xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://schemas.microsoft.com/ado/2008/09/edm\">\r\n      <EntityContainer
+        Name=\"SyndicationContext\" m:IsDefaultEntityContainer=\"true\">\r\n        <FunctionImport
+        Name=\"WelcomePage\" ReturnType=\"Edm.String\" m:HttpMethod=\"GET\" m:MimeType=\"text/html\"
+        />\r\n        <EntitySet Name=\"Objects\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicObject\"
+        />\r\n        <EntitySet Name=\"Searchs\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicSearch\"
+        />\r\n        <EntitySet Name=\"Structures\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicStructure\"
+        />\r\n        <EntitySet Name=\"Items\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicItem\"
+        />\r\n        <EntitySet Name=\"Fields\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicField\"
+        />\r\n        <AssociationSet Name=\"SyndicSearch_Object\" Association=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicSearch_Object\">\r\n
+        \         <End Role=\"SyndicSearch_Object_Source\" EntitySet=\"Searchs\" />\r\n
+        \         <End Role=\"SyndicSearch_Object_Target\" EntitySet=\"Objects\" />\r\n
+        \       </AssociationSet>\r\n        <AssociationSet Name=\"SyndicObject_Structure\"
+        Association=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicObject_Structure\">\r\n
+        \         <End Role=\"SyndicObject_Structure_Source\" EntitySet=\"Objects\"
+        />\r\n          <End Role=\"SyndicObject_Structure_Target\" EntitySet=\"Structures\"
+        />\r\n        </AssociationSet>\r\n        <AssociationSet Name=\"SyndicField_Items\"
+        Association=\"TourInSoft.V5.Syndication.Syndication_DiffusionBulletinneige_4fcde79e97cc469db31a28f7482ca953.SyndicField_Items\">\r\n
+        \         <End Role=\"SyndicField_Items_Source\" EntitySet=\"Fields\" />\r\n
+        \         <End Role=\"SyndicField_Items_Target\" EntitySet=\"Items\" />\r\n
+        \       </AssociationSet>\r\n      </EntityContainer>\r\n    </Schema>\r\n
+        \ </edmx:DataServices>\r\n</edmx:Edmx>"
+    http_version: 
+  recorded_at: Tue, 03 Sep 2013 10:31:19 GMT
+- request:
+    method: get
+    uri: http://wcf.tourinsoft.com/Syndication/anmsm/ce4e4296-6132-4e11-b8db-ea21b92e736c/$metadata
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '18439'
+      Date:
+      - Tue, 03 Sep 2013 10:29:25 GMT
+      Content-Type:
+      - application/xml;charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - ASP.NET_SessionId=c5l2lft0dnawtzlei0hhqncr; path=/; HttpOnly
+      Dataserviceversion:
+      - 1.0;
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - ! '*'
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<edmx:Edmx
+        Version=\"1.0\" xmlns:edmx=\"http://schemas.microsoft.com/ado/2007/06/edmx\">\r\n
+        \ <edmx:DataServices xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        m:DataServiceVersion=\"1.0\">\r\n    <Schema Namespace=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C\"
+        xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\" xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://schemas.microsoft.com/ado/2008/09/edm\">\r\n      <EntityType
+        Name=\"SyndicObject\">\r\n        <Key>\r\n          <PropertyRef Name=\"SyndicObjectID\"
+        />\r\n        </Key>\r\n        <Property Name=\"SyndicObjectID\" Type=\"Edm.String\"
+        Nullable=\"false\" MaxLength=\"128\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"Published\" Type=\"Edm.DateTime\" Nullable=\"false\"
+        m:FC_TargetPath=\"SyndicationPublished\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"Updated\" Type=\"Edm.DateTime\" Nullable=\"false\"
+        m:FC_TargetPath=\"SyndicationUpdated\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"SyndicObjectName\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"SyndicationTitle\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"SyndicStructureId\" Type=\"Edm.Guid\" Nullable=\"true\" />\r\n        <Property
+        Name=\"GmapLatitude\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"lat\" m:FC_NsUri=\"http://www.georss.org/georss\"
+        m:FC_NsPrefix=\"geo\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"GmapLongitude\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"long\" m:FC_NsUri=\"http://www.georss.org/georss\"
+        m:FC_NsPrefix=\"geo\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"ObjectTypeFix\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ObjectTypeName\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"SyndicObjectOrder\" Type=\"Edm.Int64\" Nullable=\"false\"
+        />\r\n        <Property Name=\"DESCDOMRELFR\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"ALTBASREL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"KMTOTTRA\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"ALTHAUTREL\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"RELNAV\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"NBTELESKI\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"NOMDOMALP\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NOUVREL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"KMTOTPISTESREL\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"NOUVALP\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NBTELECAB\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"URLFORF\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"NEIGECULT\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NBTOTPISTESREL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"COMMGEN\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"KMTOTRAQ\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"ALTBASALP\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"NBTOTROUGES\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"ALTPIED\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NBSNOW\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"NBTOTVERTES\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"FORFRM\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"KMTOTPIE\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"PUISS\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"NBTELESIE\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"KMTOTPISTESNORD\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DESCDOMNORDGB\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCDOMALPFR\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"AGEMINSEN\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ZONELUD\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"NBLUG\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NBTOTPISTES\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ALTHAUTNORD\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"RELSKI\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NBTOTRM\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"STATION\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"AUTRETELEPH\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NBTOTNOIRES\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ALTHAUTALP\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"NOUVNORD\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"KMTOTPISTES\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"DESCDOMNORDFR\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"KMTOTSKANORD\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NOMDOMNORD\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ALTBASNORD\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"AGEMAXENF\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"NOMDOMREL\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"NBTOTBLEUES\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCDOMRELGB\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"ZONEDEB\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"NBRES\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"DESCDOMALPGB\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <NavigationProperty
+        Name=\"Searchs\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicSearch_Object\"
+        FromRole=\"SyndicSearch_Object_Target\" ToRole=\"SyndicSearch_Object_Source\"
+        />\r\n        <NavigationProperty Name=\"Structure\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicObject_Structure\"
+        FromRole=\"SyndicObject_Structure_Source\" ToRole=\"SyndicObject_Structure_Target\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicSearch\">\r\n
+        \       <Key>\r\n          <PropertyRef Name=\"SyndicSearchID\" />\r\n        </Key>\r\n
+        \       <Property Name=\"SyndicSearchID\" Type=\"Edm.Int64\" Nullable=\"false\"
+        p8:StoreGeneratedPattern=\"Identity\" xmlns:p8=\"http://schemas.microsoft.com/ado/2009/02/edm/annotation\"
+        />\r\n        <Property Name=\"SyndicObjectID\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"128\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"ObjectTypeFix\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"STATION\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <NavigationProperty Name=\"Object\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicSearch_Object\"
+        FromRole=\"SyndicSearch_Object_Source\" ToRole=\"SyndicSearch_Object_Target\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicStructure\">\r\n
+        \       <Key>\r\n          <PropertyRef Name=\"SyndicStructureId\" />\r\n
+        \       </Key>\r\n        <Property Name=\"SyndicStructureId\" Type=\"Edm.Guid\"
+        Nullable=\"false\" />\r\n        <Property Name=\"Name\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"Email\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"EmailName\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"Url\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"Address1\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"Address2\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"Address3\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n        <Property Name=\"Postcode\" Type=\"Edm.String\" Nullable=\"true\"
+        MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property
+        Name=\"City\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\"
+        FixedLength=\"false\" />\r\n        <Property Name=\"Country\" Type=\"Edm.String\"
+        Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicItem\">\r\n        <Key>\r\n
+        \         <PropertyRef Name=\"SyndicItemID\" />\r\n        </Key>\r\n        <Property
+        Name=\"SyndicItemID\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"128\"
+        Unicode=\"true\" FixedLength=\"false\" />\r\n        <Property Name=\"ItemValue\"
+        Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\" Unicode=\"true\" FixedLength=\"false\"
+        m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\"
+        />\r\n        <Property Name=\"ItemOrder\" Type=\"Edm.Int64\" Nullable=\"false\"
+        />\r\n        <Property Name=\"SyndicId\" Type=\"Edm.Guid\" Nullable=\"false\"
+        />\r\n        <Property Name=\"SyndicFieldID\" Type=\"Edm.Guid\" Nullable=\"false\"
+        />\r\n        <NavigationProperty Name=\"Field\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicField_Items\"
+        FromRole=\"SyndicField_Items_Target\" ToRole=\"SyndicField_Items_Source\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"SyndicField\">\r\n        <Key>\r\n
+        \         <PropertyRef Name=\"SyndicFieldID\" />\r\n        </Key>\r\n        <Property
+        Name=\"SyndicFieldID\" Type=\"Edm.Guid\" Nullable=\"false\" />\r\n        <Property
+        Name=\"SyndicFieldName\" Type=\"Edm.String\" Nullable=\"true\" MaxLength=\"Max\"
+        Unicode=\"true\" FixedLength=\"false\" m:FC_TargetPath=\"SyndicationTitle\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"True\" />\r\n        <Property
+        Name=\"ViewType\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <Property
+        Name=\"TypeField\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <Property
+        Name=\"SyndicId\" Type=\"Edm.Guid\" Nullable=\"false\" />\r\n        <Property
+        Name=\"ReferenceOrdre\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <NavigationProperty
+        Name=\"Items\" Relationship=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicField_Items\"
+        FromRole=\"SyndicField_Items_Source\" ToRole=\"SyndicField_Items_Target\"
+        />\r\n      </EntityType>\r\n      <Association Name=\"SyndicSearch_Object\">\r\n
+        \       <End Role=\"SyndicSearch_Object_Source\" Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicSearch\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"SyndicSearch_Object_Target\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicObject\"
+        Multiplicity=\"0..1\" />\r\n        <ReferentialConstraint>\r\n          <Principal
+        Role=\"SyndicSearch_Object_Target\">\r\n            <PropertyRef Name=\"SyndicObjectID\"
+        />\r\n          </Principal>\r\n          <Dependent Role=\"SyndicSearch_Object_Source\">\r\n
+        \           <PropertyRef Name=\"SyndicObjectID\" />\r\n          </Dependent>\r\n
+        \       </ReferentialConstraint>\r\n      </Association>\r\n      <Association
+        Name=\"SyndicObject_Structure\">\r\n        <End Role=\"SyndicObject_Structure_Source\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicObject\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"SyndicObject_Structure_Target\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicStructure\"
+        Multiplicity=\"0..1\" />\r\n        <ReferentialConstraint>\r\n          <Principal
+        Role=\"SyndicObject_Structure_Target\">\r\n            <PropertyRef Name=\"SyndicStructureId\"
+        />\r\n          </Principal>\r\n          <Dependent Role=\"SyndicObject_Structure_Source\">\r\n
+        \           <PropertyRef Name=\"SyndicStructureId\" />\r\n          </Dependent>\r\n
+        \       </ReferentialConstraint>\r\n      </Association>\r\n      <Association
+        Name=\"SyndicField_Items\">\r\n        <End Role=\"SyndicField_Items_Source\"
+        Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicField\"
+        Multiplicity=\"1\">\r\n          <OnDelete Action=\"Cascade\" />\r\n        </End>\r\n
+        \       <End Role=\"SyndicField_Items_Target\" Type=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicItem\"
+        Multiplicity=\"*\" />\r\n        <ReferentialConstraint>\r\n          <Principal
+        Role=\"SyndicField_Items_Source\">\r\n            <PropertyRef Name=\"SyndicFieldID\"
+        />\r\n          </Principal>\r\n          <Dependent Role=\"SyndicField_Items_Target\">\r\n
+        \           <PropertyRef Name=\"SyndicFieldID\" />\r\n          </Dependent>\r\n
+        \       </ReferentialConstraint>\r\n      </Association>\r\n    </Schema>\r\n
+        \   <Schema Namespace=\"System.Data.Objects\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
+        xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://schemas.microsoft.com/ado/2008/09/edm\">\r\n      <EntityContainer
+        Name=\"SyndicationContext\" m:IsDefaultEntityContainer=\"true\">\r\n        <FunctionImport
+        Name=\"WelcomePage\" ReturnType=\"Edm.String\" m:HttpMethod=\"GET\" m:MimeType=\"text/html\"
+        />\r\n        <EntitySet Name=\"Objects\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicObject\"
+        />\r\n        <EntitySet Name=\"Searchs\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicSearch\"
+        />\r\n        <EntitySet Name=\"Structures\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicStructure\"
+        />\r\n        <EntitySet Name=\"Items\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicItem\"
+        />\r\n        <EntitySet Name=\"Fields\" EntityType=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicField\"
+        />\r\n        <AssociationSet Name=\"SyndicSearch_Object\" Association=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicSearch_Object\">\r\n
+        \         <End Role=\"SyndicSearch_Object_Source\" EntitySet=\"Searchs\" />\r\n
+        \         <End Role=\"SyndicSearch_Object_Target\" EntitySet=\"Objects\" />\r\n
+        \       </AssociationSet>\r\n        <AssociationSet Name=\"SyndicObject_Structure\"
+        Association=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicObject_Structure\">\r\n
+        \         <End Role=\"SyndicObject_Structure_Source\" EntitySet=\"Objects\"
+        />\r\n          <End Role=\"SyndicObject_Structure_Target\" EntitySet=\"Structures\"
+        />\r\n        </AssociationSet>\r\n        <AssociationSet Name=\"SyndicField_Items\"
+        Association=\"TourInSoft.V5.Syndication.Syndication_DiffusionEspaceneigeHiver_F1E2D20E86EA4C259DD4D7576114433C.SyndicField_Items\">\r\n
+        \         <End Role=\"SyndicField_Items_Source\" EntitySet=\"Fields\" />\r\n
+        \         <End Role=\"SyndicField_Items_Target\" EntitySet=\"Items\" />\r\n
+        \       </AssociationSet>\r\n      </EntityContainer>\r\n    </Schema>\r\n
+        \ </edmx:DataServices>\r\n</edmx:Edmx>"
+    http_version: 
+  recorded_at: Tue, 03 Sep 2013 10:31:19 GMT
+recorded_with: VCR 2.5.0
